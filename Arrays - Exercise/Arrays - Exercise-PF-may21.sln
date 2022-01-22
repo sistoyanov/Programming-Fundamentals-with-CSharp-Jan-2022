@@ -19,9 +19,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Test", "Test\Test.csproj", 
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "07. Max Sequence of Equal Elements", "07. Max Sequence of Equal Elements\07. Max Sequence of Equal Elements.csproj", "{7B6023E8-8B25-46E6-935A-4F7EF4C2F4CF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "08. Magic Sum", "08. Magic Sum\08. Magic Sum.csproj", "{6C9C76F7-E5E3-4676-8BB1-8248F55BDD89}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "08. Magic Sum", "08. Magic Sum\08. Magic Sum.csproj", "{6C9C76F7-E5E3-4676-8BB1-8248F55BDD89}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "09. Kamino Factory", "09. Kamino Factory\09. Kamino Factory.csproj", "{BDC2A472-A5A7-4CB9-B0B6-7EEA1DAB19CF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "09. Kamino Factory", "09. Kamino Factory\09. Kamino Factory.csproj", "{BDC2A472-A5A7-4CB9-B0B6-7EEA1DAB19CF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "10. LadyBugs", "10. LadyBugs\10. LadyBugs.csproj", "{F2D5CD91-3E4B-4161-B264-345950CFC086}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -69,6 +71,10 @@ Global
 		{BDC2A472-A5A7-4CB9-B0B6-7EEA1DAB19CF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BDC2A472-A5A7-4CB9-B0B6-7EEA1DAB19CF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BDC2A472-A5A7-4CB9-B0B6-7EEA1DAB19CF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F2D5CD91-3E4B-4161-B264-345950CFC086}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F2D5CD91-3E4B-4161-B264-345950CFC086}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F2D5CD91-3E4B-4161-B264-345950CFC086}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F2D5CD91-3E4B-4161-B264-345950CFC086}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
