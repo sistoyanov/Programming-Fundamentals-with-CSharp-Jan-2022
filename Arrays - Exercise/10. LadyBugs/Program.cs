@@ -8,43 +8,82 @@ namespace _10._LadyBugs
         static void Main(string[] args)
         {
             int filedSize = int.Parse(Console.ReadLine());
-
-            int[] filed = new int[filedSize];
-
+            int[] field = new int[filedSize];
             int[] initialIndexes = Console.ReadLine().Split().Select(int.Parse).ToArray();
+
+            //for (int i = 0; i < initialIndexes.Length; i++)
+            //{
+            //    for (int j = 0; j < filedSize; j++)
+            //    {
+            //        if (initialIndexes[i] == j)
+            //        {
+            //            field[j] = 1;
+            //        }
+            //    }
+            //}
 
             for (int i = 0; i < initialIndexes.Length; i++)
             {
-                for (int j = 0; j < filed.Length; j++)
+                int currentIndex = initialIndexes[i];
+
+                if (currentIndex >= 0 && currentIndex < filedSize)
                 {
-                    if (initialIndexes[i] == j)
+                    field[currentIndex] = 1;
+                }
+            }
+
+            string input = String.Empty;
+
+            while ((input = Console.ReadLine()) != "end")
+            {
+                string[] currentComand = input.Split();
+                int ladyBugIndex = int.Parse(currentComand[0]);
+                string ladyBugDirection = currentComand[1];
+                int ladyBugFlyLength = int.Parse(currentComand[2]);
+                int ladyBugNewIndex = 0;
+
+                if (ladyBugIndex < 0 || ladyBugIndex >= filedSize || field[ladyBugIndex] == 0)
+                {
+                    continue;
+                }
+
+                field[ladyBugIndex] = 0;
+
+                if (ladyBugDirection == "right")
+                {
+                    ladyBugNewIndex = ladyBugIndex + ladyBugFlyLength;
+                   
+                    while (ladyBugNewIndex < field.Length)
                     {
-                        filed[j] = 1;
+                        if (field[ladyBugNewIndex] == 1)
+                        {
+                            ladyBugNewIndex += ladyBugFlyLength;
+                            continue;
+                        }
+
+                        field[ladyBugNewIndex] = 1;
+                        break;
+                    }
+                }
+                else if (ladyBugDirection == "left")
+                {
+                    ladyBugNewIndex = ladyBugIndex - ladyBugFlyLength;
+                    
+                    while (ladyBugNewIndex >= 0)
+                    {
+                        if (field[ladyBugNewIndex] == 1)
+                        {
+                            ladyBugNewIndex -= ladyBugFlyLength;
+                            continue;
+                        }
+
+                        field[ladyBugNewIndex] = 1;
+                        break;
                     }
                 }
             }
 
-            //Console.WriteLine(String.Join(" ", filed));
-
-            string input = Console.ReadLine();
-
-            while (input != "end")
-            {
-                string[] currentComand = input.Split().ToArray();
-                int ladyBugIndex = int.Parse(currentComand[0]);
-                string ladyBugDirection = currentComand[1].ToString();
-                int ladyBugFlyLength = int.Parse(currentComand[2]);
-
-
-                //Console.WriteLine(ladyBugIndex);
-                //Console.WriteLine(ladyBugDirection);
-                //Console.WriteLine(ladyBugFlyLength);
-
-
-
-                input = Console.ReadLine();
-            }
-
+            Console.WriteLine(String.Join(" ", field));
         }
     }
 }
