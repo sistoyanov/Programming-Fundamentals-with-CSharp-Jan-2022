@@ -9,24 +9,26 @@ namespace _08._Condense_Array_to_Number
         {
             int[] nums = Console.ReadLine().Split().Select(int.Parse).ToArray();
 
-            //for (int i = 0; i < nums.Length - 1; i++)
-            //{
+            int initialLength = nums.Length;
 
-            //    for (int j = 0; j < nums.Length -1; j++)
+            //for (int i = 0; i < initialLength - 1; i++)
+            //{
+            //    int[] condensed = new int[nums.Length - 1];
+
+            //    for (int j = 0; j < nums.Length - 1; j++)
             //    {
-            //        nums[j] = nums[j] + nums[j + 1];
-            //        Console.WriteLine(nums[j]);
+            //        condensed[j] = nums[j] + nums[j + 1];
+
             //    }
 
-            //    Console.WriteLine(nums[i]);
+            //    nums = condensed;
             //}
 
-            //Console.WriteLine(nums[0]);
 
             while (nums.Length != 1)
             {
                 int[] condensed = new int[nums.Length - 1];
-                
+
                 for (int i = 0; i < nums.Length - 1; i++)
                 {
                     condensed[i] = nums[i] + nums[i + 1];
