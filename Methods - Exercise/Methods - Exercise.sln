@@ -3,13 +3,21 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.32014.148
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01. Smallest of Three Numbers", "01. Smallest of Three Numbers\01. Smallest of Three Numbers.csproj", "{577E47A0-062D-4A05-934F-196CDB691338}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "01. Smallest of Three Numbers", "01. Smallest of Three Numbers\01. Smallest of Three Numbers.csproj", "{577E47A0-062D-4A05-934F-196CDB691338}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02. Vowels Count", "02. Vowels Count\02. Vowels Count.csproj", "{8FE943F0-CA3D-497F-BB7F-D4D9983AAF18}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "02. Vowels Count", "02. Vowels Count\02. Vowels Count.csproj", "{8FE943F0-CA3D-497F-BB7F-D4D9983AAF18}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03. Characters in Range", "03. Characters in Range\03. Characters in Range.csproj", "{DA530C5D-4B8A-451E-A7A5-16408F545DAE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "03. Characters in Range", "03. Characters in Range\03. Characters in Range.csproj", "{DA530C5D-4B8A-451E-A7A5-16408F545DAE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04. Password Validator", "04. Password Validator\04. Password Validator.csproj", "{7EF97E65-3A2D-4473-8EEB-D42BF9ED0AE7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "04. Password Validator", "04. Password Validator\04. Password Validator.csproj", "{7EF97E65-3A2D-4473-8EEB-D42BF9ED0AE7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "05. Add and Subtract", "05. Add and Subtract\05. Add and Subtract.csproj", "{8F65F0A7-A260-445C-AB0E-B7CBF2BACD3D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "06. Middle Characters", "06. Middle Characters\06. Middle Characters.csproj", "{716371A6-B0C8-4B5A-AC25-316A3976A21C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "07. NxN Matrix", "07. NxN Matrix\07. NxN Matrix.csproj", "{0698DF11-8D33-4672-80D6-C7BA243C8CFE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "08. Factorial Division", "08. Factorial Division\08. Factorial Division.csproj", "{86342884-D3E0-45DE-9B06-1EE792B51549}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +41,22 @@ Global
 		{7EF97E65-3A2D-4473-8EEB-D42BF9ED0AE7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7EF97E65-3A2D-4473-8EEB-D42BF9ED0AE7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7EF97E65-3A2D-4473-8EEB-D42BF9ED0AE7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8F65F0A7-A260-445C-AB0E-B7CBF2BACD3D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8F65F0A7-A260-445C-AB0E-B7CBF2BACD3D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8F65F0A7-A260-445C-AB0E-B7CBF2BACD3D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8F65F0A7-A260-445C-AB0E-B7CBF2BACD3D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{716371A6-B0C8-4B5A-AC25-316A3976A21C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{716371A6-B0C8-4B5A-AC25-316A3976A21C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{716371A6-B0C8-4B5A-AC25-316A3976A21C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{716371A6-B0C8-4B5A-AC25-316A3976A21C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0698DF11-8D33-4672-80D6-C7BA243C8CFE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0698DF11-8D33-4672-80D6-C7BA243C8CFE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0698DF11-8D33-4672-80D6-C7BA243C8CFE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0698DF11-8D33-4672-80D6-C7BA243C8CFE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{86342884-D3E0-45DE-9B06-1EE792B51549}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{86342884-D3E0-45DE-9B06-1EE792B51549}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{86342884-D3E0-45DE-9B06-1EE792B51549}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{86342884-D3E0-45DE-9B06-1EE792B51549}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
