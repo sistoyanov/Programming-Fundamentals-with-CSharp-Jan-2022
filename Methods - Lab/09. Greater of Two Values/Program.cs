@@ -29,8 +29,7 @@ namespace _09._Greater_of_Two_Values
             }
             else
             {
-                int comparisonResult = string.Compare(first, second);
-                output = comparisonResult >= 0 ? first : second;
+                output = first.CompareTo(second) > 0 ? first : second;
             }
 
             return output;
