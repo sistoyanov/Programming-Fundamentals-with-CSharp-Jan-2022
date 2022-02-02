@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Text;
 
 namespace _07._Repeat_String
 {
@@ -13,14 +14,14 @@ namespace _07._Repeat_String
 
         static string RepeatString(string input, int count)
         {
-            string result = string.Empty;
+            StringBuilder result = new StringBuilder();
 
             for (int i = 0; i < count; i++)
             {
-                result += input;
+                result.Append(input);
             }
 
-            return result;
+            return result.ToString();
         }
     }
 }

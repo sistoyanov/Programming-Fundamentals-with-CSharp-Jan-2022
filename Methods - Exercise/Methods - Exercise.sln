@@ -11,13 +11,21 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "03. Characters in Range", "
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "04. Password Validator", "04. Password Validator\04. Password Validator.csproj", "{7EF97E65-3A2D-4473-8EEB-D42BF9ED0AE7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "05. Add and Subtract", "05. Add and Subtract\05. Add and Subtract.csproj", "{8F65F0A7-A260-445C-AB0E-B7CBF2BACD3D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "05. Add and Subtract", "05. Add and Subtract\05. Add and Subtract.csproj", "{8F65F0A7-A260-445C-AB0E-B7CBF2BACD3D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "06. Middle Characters", "06. Middle Characters\06. Middle Characters.csproj", "{716371A6-B0C8-4B5A-AC25-316A3976A21C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "06. Middle Characters", "06. Middle Characters\06. Middle Characters.csproj", "{716371A6-B0C8-4B5A-AC25-316A3976A21C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "07. NxN Matrix", "07. NxN Matrix\07. NxN Matrix.csproj", "{0698DF11-8D33-4672-80D6-C7BA243C8CFE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "07. NxN Matrix", "07. NxN Matrix\07. NxN Matrix.csproj", "{0698DF11-8D33-4672-80D6-C7BA243C8CFE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "08. Factorial Division", "08. Factorial Division\08. Factorial Division.csproj", "{86342884-D3E0-45DE-9B06-1EE792B51549}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "08. Factorial Division", "08. Factorial Division\08. Factorial Division.csproj", "{86342884-D3E0-45DE-9B06-1EE792B51549}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "09. Palindrome Integers", "09. Palindrome Integers\09. Palindrome Integers.csproj", "{81397932-3511-48AF-9FC2-EB40DA253CDB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "10. Top Number", "10. Top Number\10. Top Number.csproj", "{4E769DD8-E387-4909-AF3B-4B74BF0A9EFB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "11. Array Manipulator", "11. Array Manipulator\11. Array Manipulator.csproj", "{EB315D87-4875-42DA-8D63-E4328E24D5C9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Test", "Test\Test.csproj", "{D1B4B302-BA0C-4AC3-9727-BBA86072501B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -57,6 +65,22 @@ Global
 		{86342884-D3E0-45DE-9B06-1EE792B51549}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{86342884-D3E0-45DE-9B06-1EE792B51549}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{86342884-D3E0-45DE-9B06-1EE792B51549}.Release|Any CPU.Build.0 = Release|Any CPU
+		{81397932-3511-48AF-9FC2-EB40DA253CDB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{81397932-3511-48AF-9FC2-EB40DA253CDB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{81397932-3511-48AF-9FC2-EB40DA253CDB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{81397932-3511-48AF-9FC2-EB40DA253CDB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4E769DD8-E387-4909-AF3B-4B74BF0A9EFB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4E769DD8-E387-4909-AF3B-4B74BF0A9EFB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4E769DD8-E387-4909-AF3B-4B74BF0A9EFB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4E769DD8-E387-4909-AF3B-4B74BF0A9EFB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EB315D87-4875-42DA-8D63-E4328E24D5C9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EB315D87-4875-42DA-8D63-E4328E24D5C9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EB315D87-4875-42DA-8D63-E4328E24D5C9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EB315D87-4875-42DA-8D63-E4328E24D5C9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D1B4B302-BA0C-4AC3-9727-BBA86072501B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D1B4B302-BA0C-4AC3-9727-BBA86072501B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D1B4B302-BA0C-4AC3-9727-BBA86072501B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D1B4B302-BA0C-4AC3-9727-BBA86072501B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
