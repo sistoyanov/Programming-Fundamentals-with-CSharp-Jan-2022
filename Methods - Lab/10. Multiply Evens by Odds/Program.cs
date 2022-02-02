@@ -7,9 +7,7 @@ namespace _10._Multiply_Evens_by_Odds
     {
         static void Main(string[] args)
         {
-            string numbers = Console.ReadLine();
-            int num = Math.Abs(int.Parse(numbers.ToString()));
-
+            int num = Math.Abs(int.Parse(Console.ReadLine()));
             Console.WriteLine(GetMultipleOfEvenAndOdds(num));
 
         }
