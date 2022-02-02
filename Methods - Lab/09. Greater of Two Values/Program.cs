@@ -20,17 +20,17 @@ namespace _09._Greater_of_Two_Values
 
             if (type == "int")
             {
-                output = int.Parse(first) >= int.Parse(second) ? $"{first}" : $"{second}";
+                output = int.Parse(first) >= int.Parse(second) ? first : second;
 
             }
             else if (type == "char")
             {
-                output = char.Parse(first) >= char.Parse(second) ? $"{first}" : $"{second}";
+                output = char.Parse(first) >= char.Parse(second) ? first : second;
             }
             else
             {
                 int comparisonResult = string.Compare(first, second);
-                output = comparisonResult >= 0 ? $"{first}" : $"{second}";
+                output = comparisonResult >= 0 ? first : second;
             }
 
             return output;
