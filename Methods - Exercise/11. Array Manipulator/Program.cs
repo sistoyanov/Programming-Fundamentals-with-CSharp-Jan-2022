@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
@@ -61,7 +62,7 @@ namespace _11._Array_Manipulator
                         if (currentComand[0] == "max" && currentComand[1] == "even" && array[i] % 2 == 0)
                         {
                             
-                            if (array[i] > maxEven)
+                            if (array[i] >= maxEven)
                             {
                                 maxEven = array[i];
                                 ouput = i;
@@ -72,7 +73,7 @@ namespace _11._Array_Manipulator
                         else if (currentComand[0] == "max" && currentComand[1] == "odd" && array[i] % 2 != 0)
                         {
                             
-                            if (array[i] > maxOdd)
+                            if (array[i] >= maxOdd)
                             {
                                 maxOdd = array[i];
                                 ouput = i;
@@ -83,7 +84,7 @@ namespace _11._Array_Manipulator
                         else if (currentComand[0] == "min" && currentComand[1] == "even" && array[i] % 2 == 0)
                         {
 
-                            if (array[i] < minEven)
+                            if (array[i] <= minEven)
                             {
                                 minEven = array[i];
                                 ouput = i;
@@ -94,7 +95,7 @@ namespace _11._Array_Manipulator
                         else if (currentComand[0] == "min" && currentComand[1] == "odd" && array[i] % 2 != 0)
                         {
                             
-                            if (array[i] < minOdd)
+                            if (array[i] <= minOdd)
                             {
                                 minOdd = array[i];
                                 ouput = i;
@@ -109,132 +110,120 @@ namespace _11._Array_Manipulator
                 else if (currentComand[0] == "first" || currentComand[0] == "last")
                 {
                     int counter = int.Parse(currentComand[1]);
-                    StringBuilder evens = new StringBuilder();
-                    StringBuilder odds = new StringBuilder();
+                    List<int> evens = new List<int>();
+                    List<int> odds = new List<int>();
 
                     for (int i = 0; i < array.Length; i++)
                     {
                         
                         if (array[i] % 2 == 0)
                         {
-                            evens.Append(array[i]);
+                            evens.Add(array[i]);
                         }
                         else
                         {
-                            odds.Append(array[i]);
+                            odds.Add(array[i]);
                         }
                     }
 
                     bool isCounterGreater = true;
-                    StringBuilder output = new StringBuilder();
+                    List<int> output = new List<int>();
 
                     if (counter <= array.Length)
                     {
                         isCounterGreater = false;
-                        int[] evensArray = new int[evens.Length];
-                        int[] oddsArray = new int[odds.Length];
-
-                        for (int h = 0; h < evensArray.Length; h++)
-                        {
-                            evensArray[h] = int.Parse(evens[h].ToString());
-                        }
-
-                        for (int k = 0; k < oddsArray.Length; k++)
-                        {
-                            oddsArray[k] = int.Parse(odds[k].ToString());
-                        }
-
 
                         if (currentComand[0] == "first")
                         {
-                            if (currentComand[2] == "even" && evens.Length > 0)
+                            if (currentComand[2] == "even" && evens.Count > 0)
                             {
                            
-                                if (counter >= evensArray.Length)
+                                if (counter >= evens.Count)
                                 {
-                                    for (int i = 0; i < evensArray.Length; i++)
+                                    for (int i = 0; i < evens.Count; i++)
                                     {
-                                        output.Append(int.Parse(evensArray[i].ToString()));
+                                        output.Add(evens[i]);
+
                                     }
                                 }
                                 else
                                 {
                                     for (int j = 0; j < counter; j++)
                                     {
-                                        output.Append(int.Parse(evensArray[j].ToString()));
+                                        output.Add(evens[j]);
                                     }
                                 }
 
                             }
-                            else if (currentComand[2] == "odd" && odds.Length > 0)
+                            else if (currentComand[2] == "odd" && odds.Count > 0)
                             {
 
-                                if (counter >= oddsArray.Length)
+                                if (counter >= odds.Count)
                                 {
-                                    for (int i = 0; i < oddsArray.Length; i++)
+                                    for (int i = 0; i < odds.Count; i++)
                                     {
-                                        output.Append(int.Parse(oddsArray[i].ToString()));
+                                        output.Add(odds[i]);
                                     }
                                 }
                                 else
                                 {
                                     for (int j = 0; j < counter; j++)
                                     {
-                                        output.Append(int.Parse(oddsArray[j].ToString()));
+                                        output.Add(odds[j]);
                                     }
                                 }
                             }
                         }
                         else if (currentComand[0] == "last")
                         {
-                            if (currentComand[2] == "even" && evens.Length > 0)
+                            if (currentComand[2] == "even" && evens.Count > 0)
                             {
 
-                                if (counter == evensArray.Length)
+                                if (counter == evens.Count)
                                 {
-                                    for (int i = 0 ; i < evensArray.Length; i++)
+                                    for (int i = 0 ; i < evens.Count; i++)
                                     {
-                                        output.Append(int.Parse(evensArray[(evensArray.Length - counter) + i].ToString()));
+                                        output.Add(evens[(evens.Count - counter) + i]);
                                     }
                                 }
-                                else if (counter > evensArray.Length)
+                                else if (counter > evens.Count)
                                 {
-                                    for (int i = 0; i < evensArray.Length; i++)
+                                    for (int i = 0; i < evens.Count; i++)
                                     {
-                                        output.Append(int.Parse(evensArray[i].ToString()));
+                                        output.Add(evens[i]);
                                     }
                                 }
                                 else
                                 {
                                     for (int j = 0; j < counter; j++)
                                     {
-                                        output.Append(int.Parse(evensArray[(evensArray.Length - counter) + j].ToString()));
+                                        output.Add(evens[(evens.Count - counter) + j]);
                                     }
                                 }
 
 
                             }
-                            else if (currentComand[2] == "odd" && odds.Length > 0)
+                            else if (currentComand[2] == "odd" && odds.Count > 0)
                             {
-                                if (counter == oddsArray.Length)
+                                if (counter == odds.Count)
                                 {
-                                    for (int i = 0; i < oddsArray.Length; i++)
+                                    for (int i = 0; i < odds.Count; i++)
                                     {
-                                        output.Append(int.Parse(oddsArray[(oddsArray.Length - counter) + i].ToString()));
+                                        output.Append(odds[(odds.Count - counter) + i]);
                                     }
                                 }
-                                else if (counter > oddsArray.Length)
+                                else if (counter > odds.Count)
                                 {
-                                    for (int i = 0; i < oddsArray.Length; i++)
+                                    for (int i = 0; i < odds.Count; i++)
                                     {
-                                        output.Append(int.Parse(oddsArray[i].ToString()));
+                                        output.Add(odds[i]);
                                     }
                                 }
                                 else
                                 {
                                     for (int j = 0; j < counter; j++)
                                     {
-                                        output.Append(int.Parse(oddsArray[(oddsArray.Length - counter) + j].ToString()));
+                                        output.Add(odds[(odds.Count - counter) + j]);
                                     }
                                 }
 
@@ -248,16 +237,10 @@ namespace _11._Array_Manipulator
                     }
                     else
                     {
-                        if (output.Length > 0)
+                        if (output.Count > 0)
                         {
-                            string[] consoleOuput = new string[output.Length];
 
-                            for (int i = 0; i < output.Length; i++)
-                            {
-                                consoleOuput[i] = output[i].ToString();
-                            }
-
-                            Console.WriteLine($"[{string.Join(", ", consoleOuput)}]");
+                            Console.WriteLine($"[{String.Join(", ", output)}]");
                         }
                         else
                         {
@@ -270,7 +253,7 @@ namespace _11._Array_Manipulator
               
             }
 
-            Console.WriteLine($"[{String.Join("," + " ", array)}]");
+            Console.WriteLine($"[{String.Join(", ", array)}]");
         }
     }
 }
