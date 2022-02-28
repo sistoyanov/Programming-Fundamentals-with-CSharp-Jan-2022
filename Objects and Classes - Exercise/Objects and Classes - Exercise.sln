@@ -13,6 +13,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04. Students", "04. Student
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "05. Teamwork Projects", "05. Teamwork Projects\05. Teamwork Projects.csproj", "{0DD873F1-CC52-4394-8F43-68918E1AF03F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "06. Vehicle Catalogue", "06. Vehicle Catalogue\06. Vehicle Catalogue.csproj", "{ECAF5DBA-06F4-4CF3-9216-DE9085F93EC8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "07. Order by Age", "07. Order by Age\07. Order by Age.csproj", "{BA6D4D0C-69AC-4D66-8435-F055CF0A86A8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +43,14 @@ Global
 		{0DD873F1-CC52-4394-8F43-68918E1AF03F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0DD873F1-CC52-4394-8F43-68918E1AF03F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0DD873F1-CC52-4394-8F43-68918E1AF03F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ECAF5DBA-06F4-4CF3-9216-DE9085F93EC8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ECAF5DBA-06F4-4CF3-9216-DE9085F93EC8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ECAF5DBA-06F4-4CF3-9216-DE9085F93EC8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ECAF5DBA-06F4-4CF3-9216-DE9085F93EC8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BA6D4D0C-69AC-4D66-8435-F055CF0A86A8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BA6D4D0C-69AC-4D66-8435-F055CF0A86A8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BA6D4D0C-69AC-4D66-8435-F055CF0A86A8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BA6D4D0C-69AC-4D66-8435-F055CF0A86A8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
