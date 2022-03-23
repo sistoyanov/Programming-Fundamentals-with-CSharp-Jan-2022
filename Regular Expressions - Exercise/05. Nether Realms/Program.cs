@@ -14,7 +14,7 @@ namespace _05._Nether_Realms
             
             for(int i = 0; i < input.Length; i++)
             {
-                input[i] = input[i].Replace(" ","");
+                input[i] = input[i].Replace(" ",String.Empty);
 
             }
 
