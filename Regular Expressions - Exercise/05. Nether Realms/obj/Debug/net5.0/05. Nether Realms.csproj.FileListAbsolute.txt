@@ -1,0 +1,16 @@
+C:\Documents\SoftUni\PF with C# -jan22\Regular Expressions - Exercise\05. Nether Realms\bin\Debug\net5.0\05. Nether Realms.exe
+C:\Documents\SoftUni\PF with C# -jan22\Regular Expressions - Exercise\05. Nether Realms\bin\Debug\net5.0\05. Nether Realms.deps.json
+C:\Documents\SoftUni\PF with C# -jan22\Regular Expressions - Exercise\05. Nether Realms\bin\Debug\net5.0\05. Nether Realms.runtimeconfig.json
+C:\Documents\SoftUni\PF with C# -jan22\Regular Expressions - Exercise\05. Nether Realms\bin\Debug\net5.0\05. Nether Realms.runtimeconfig.dev.json
+C:\Documents\SoftUni\PF with C# -jan22\Regular Expressions - Exercise\05. Nether Realms\bin\Debug\net5.0\05. Nether Realms.dll
+C:\Documents\SoftUni\PF with C# -jan22\Regular Expressions - Exercise\05. Nether Realms\bin\Debug\net5.0\ref\05. Nether Realms.dll
+C:\Documents\SoftUni\PF with C# -jan22\Regular Expressions - Exercise\05. Nether Realms\bin\Debug\net5.0\05. Nether Realms.pdb
+C:\Documents\SoftUni\PF with C# -jan22\Regular Expressions - Exercise\05. Nether Realms\obj\Debug\net5.0\05. Nether Realms.csproj.AssemblyReference.cache
+C:\Documents\SoftUni\PF with C# -jan22\Regular Expressions - Exercise\05. Nether Realms\obj\Debug\net5.0\05. Nether Realms.GeneratedMSBuildEditorConfig.editorconfig
+C:\Documents\SoftUni\PF with C# -jan22\Regular Expressions - Exercise\05. Nether Realms\obj\Debug\net5.0\05. Nether Realms.AssemblyInfoInputs.cache
+C:\Documents\SoftUni\PF with C# -jan22\Regular Expressions - Exercise\05. Nether Realms\obj\Debug\net5.0\05. Nether Realms.AssemblyInfo.cs
+C:\Documents\SoftUni\PF with C# -jan22\Regular Expressions - Exercise\05. Nether Realms\obj\Debug\net5.0\05. Nether Realms.csproj.CoreCompileInputs.cache
+C:\Documents\SoftUni\PF with C# -jan22\Regular Expressions - Exercise\05. Nether Realms\obj\Debug\net5.0\05. Nether Realms.dll
+C:\Documents\SoftUni\PF with C# -jan22\Regular Expressions - Exercise\05. Nether Realms\obj\Debug\net5.0\ref\05. Nether Realms.dll
+C:\Documents\SoftUni\PF with C# -jan22\Regular Expressions - Exercise\05. Nether Realms\obj\Debug\net5.0\05. Nether Realms.pdb
+C:\Documents\SoftUni\PF with C# -jan22\Regular Expressions - Exercise\05. Nether Realms\obj\Debug\net5.0\05. Nether Realms.genruntimeconfig.cache
