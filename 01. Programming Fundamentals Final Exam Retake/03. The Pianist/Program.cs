@@ -37,7 +37,7 @@ namespace _03._The_Pianist
                     string composer = commandArg[2];
                     string key = commandArg[3];
 
-                    if (pieces.Any(n => n.Name == piece))
+                    if (IsPieceExists(pieces, piece))
                     {
                         Console.WriteLine($"{piece} is already in the collection!");
                     }
@@ -50,7 +50,7 @@ namespace _03._The_Pianist
                 }
                 else if (commandType == "Remove")
                 {
-                    if (pieces.Any(n => n.Name == piece))
+                    if (IsPieceExists(pieces, piece))
                     {
                         Piese pieseToRemove = pieces.FirstOrDefault(n => n.Name == piece);
                         pieces.Remove(pieseToRemove);
@@ -65,7 +65,7 @@ namespace _03._The_Pianist
                 {
                     string newKey = commandArg[2];
 
-                    if (pieces.Any(n => n.Name == piece))
+                    if (IsPieceExists(pieces, piece))
                     {
                         Piese pieseToChange = pieces.FirstOrDefault(n => n.Name == piece);
                         pieseToChange.Key = newKey;
@@ -82,6 +82,19 @@ namespace _03._The_Pianist
             {
                 Console.WriteLine($"{piese.Name} -> Composer: {piese.Composer}, Key: {piese.Key}");
             }
+
+        }
+
+        static bool IsPieceExists(List<Piese> pieces, string piece)
+        {
+            if (pieces.Any(n => n.Name == piece))
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
         }
     }
 
@@ -96,6 +109,5 @@ namespace _03._The_Pianist
         public string Name { get; set; }
         public string Composer { get; set; }
         public string Key { get; set; }
-        public Piese Where { get; internal set; }
     }
 }
