@@ -5,6 +5,8 @@ VisualStudioVersion = 17.1.32319.34
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01. World Tour", "01. World Tour\01. World Tour.csproj", "{B2D58B6C-34E5-4FB2-A314-DAE85A181A5A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02. Destination Mapper", "02. Destination Mapper\02. Destination Mapper.csproj", "{F426066A-9C8D-4664-9E0E-FA573685EA25}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{B2D58B6C-34E5-4FB2-A314-DAE85A181A5A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B2D58B6C-34E5-4FB2-A314-DAE85A181A5A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B2D58B6C-34E5-4FB2-A314-DAE85A181A5A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F426066A-9C8D-4664-9E0E-FA573685EA25}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F426066A-9C8D-4664-9E0E-FA573685EA25}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F426066A-9C8D-4664-9E0E-FA573685EA25}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F426066A-9C8D-4664-9E0E-FA573685EA25}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
