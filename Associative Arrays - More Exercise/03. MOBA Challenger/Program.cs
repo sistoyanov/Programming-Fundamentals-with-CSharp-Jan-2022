@@ -123,7 +123,6 @@ namespace _03._MOBA_Challenger
                             }
                         }
 
-                        break;
                     }
                 }
                 else
@@ -131,13 +130,13 @@ namespace _03._MOBA_Challenger
                     min = firstPlayerLevels.Count;
                     max = secondPlayerLevels.Count;
 
-                    for (int i = 0; i < min; i++)
+                    for (int k = 0; k < min; k++)
                     {
-                        var kvp1 = firstPlayerLevels.ElementAt(i);
+                        var kvp1 = firstPlayerLevels.ElementAt(k);
 
-                        for (int h = 0; h < max; h++)
+                        for (int j = 0; j < max; j++)
                         {
-                            var kvp2 = secondPlayerLevels.ElementAt(h);
+                            var kvp2 = secondPlayerLevels.ElementAt(j);
 
                             if (kvp1.Key == kvp2.Key)
                             {
@@ -146,7 +145,6 @@ namespace _03._MOBA_Challenger
                             }
                         }
 
-                        break;
                     }
                 }
 
