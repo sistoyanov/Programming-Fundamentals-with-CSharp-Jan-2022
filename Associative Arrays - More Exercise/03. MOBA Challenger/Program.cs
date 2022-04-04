@@ -43,20 +43,19 @@ namespace _03._MOBA_Challenger
 
             finalPlayers = finalPlayers.OrderByDescending(x => x.Value).ThenBy(x => x.Key).ToDictionary(x => x.Key, x => x.Value);
             
-            foreach (var kvp in finalPlayers)
+            foreach (var playerKVP in finalPlayers)
             {
-                Console.WriteLine($"{kvp.Key}: {kvp.Value} skill");
+                Console.WriteLine($"{playerKVP.Key}: {playerKVP.Value} skill");
 
-                Player playerToPrint = players.FirstOrDefault(n => n.Name == kvp.Key);
+                Player playerToPrint = players.FirstOrDefault(n => n.Name == playerKVP.Key);
                 Dictionary<string, int> playerToPrintLevels = playerToPrint.Level;
                 playerToPrintLevels = playerToPrintLevels.OrderByDescending(x => x.Value).ThenBy(x => x.Key).ToDictionary(x => x.Key, x => x.Value);
 
-                foreach (var kvp1 in playerToPrintLevels)
+                foreach (var playerToPRintKVP in playerToPrintLevels)
                 {
-                    Console.WriteLine($"- {kvp1.Key} <::> {kvp1.Value}");
+                    Console.WriteLine($"- {playerToPRintKVP.Key} <::> {playerToPRintKVP.Value}");
                 }
             }
-
 
         }
 
@@ -100,51 +99,19 @@ namespace _03._MOBA_Challenger
                 Dictionary<string, int> secondPlayerLevels = secondPlayer.Level;
                 bool duel = false;
 
-                int min = 0;
-                int max = 0;
-
-                if (firstPlayerLevels.Count > secondPlayerLevels.Count)
+                foreach (var firstKVP in firstPlayerLevels)
                 {
-                    min = secondPlayerLevels.Count;
-                    max = firstPlayerLevels.Count;
+                    var firstPlayerKey = firstKVP.Key;
 
-                    for (int i = 0; i < min; i++)
+                    foreach (var secondKVP in secondPlayerLevels)
                     {
-                        var kvp1 = secondPlayerLevels.ElementAt(i);
+                        var secondPlayerKey = secondKVP.Key;
 
-                        for (int h = 0; h < max; h++)
+                        if (firstPlayerKey == secondPlayerKey)
                         {
-                            var kvp2 = firstPlayerLevels.ElementAt(h);
-
-                            if (kvp1.Key == kvp2.Key)
-                            {
-                                duel = true;
-                                break;
-                            }
+                            duel = true;
+                            break;
                         }
-
-                    }
-                }
-                else
-                {
-                    min = firstPlayerLevels.Count;
-                    max = secondPlayerLevels.Count;
-
-                    for (int k = 0; k < min; k++)
-                    {
-                        var kvp1 = firstPlayerLevels.ElementAt(k);
-
-                        for (int j = 0; j < max; j++)
-                        {
-                            var kvp2 = secondPlayerLevels.ElementAt(j);
-
-                            if (kvp1.Key == kvp2.Key)
-                            {
-                                duel = true;
-                                break;
-                            }
-                        }
-
                     }
                 }
 
