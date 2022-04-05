@@ -35,6 +35,17 @@ namespace _03._Treasure_Finder
                     output.Append((char)(message[i] - key[keyIdx]));
 
                 }
+
+                string decriptedMessage = output.ToString();
+                int treasureStart = decriptedMessage.IndexOf('&');
+                int treasureEnd = decriptedMessage.LastIndexOf('&');
+                int coordinatesStart = decriptedMessage.IndexOf('<');
+                int coordinatesEnd = decriptedMessage.IndexOf('>');
+
+                string treasure = decriptedMessage.Substring(treasureStart + 1, (treasureEnd - treasureStart) - 1);
+                string coordinates = decriptedMessage.Substring(coordinatesStart + 1, (coordinatesEnd - coordinatesStart) - 1);
+
+                Console.WriteLine($"Found {treasure} at {coordinates}");
             }
         }
     }
