@@ -7,7 +7,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "01. Extract Person Informat
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "02. Ascii Sumator", "02. Ascii Sumator\02. Ascii Sumator.csproj", "{EF4EBDF9-5EA7-428A-8B55-7557BCD374ED}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03. Treasure Finder", "03. Treasure Finder\03. Treasure Finder.csproj", "{F9E699A4-12CE-4004-B991-04EB62072EE6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "03. Treasure Finder", "03. Treasure Finder\03. Treasure Finder.csproj", "{F9E699A4-12CE-4004-B991-04EB62072EE6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04. Morse Code Translator", "04. Morse Code Translator\04. Morse Code Translator.csproj", "{579414AF-FD17-4C6A-8F4B-87739C6948B4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,6 +29,10 @@ Global
 		{F9E699A4-12CE-4004-B991-04EB62072EE6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F9E699A4-12CE-4004-B991-04EB62072EE6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F9E699A4-12CE-4004-B991-04EB62072EE6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{579414AF-FD17-4C6A-8F4B-87739C6948B4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{579414AF-FD17-4C6A-8F4B-87739C6948B4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{579414AF-FD17-4C6A-8F4B-87739C6948B4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{579414AF-FD17-4C6A-8F4B-87739C6948B4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
